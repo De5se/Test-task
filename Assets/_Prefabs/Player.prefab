@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00ba85d3528b084eb30cda39f1b3a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  directionArrow: {fileID: 3872904862738379867}
   motionDuration: 1
 --- !u!54 &6679943031258119628
 Rigidbody:
@@ -268,3 +269,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2120167837166703260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3872904862738379867 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2941707205866481351, guid: 22cbfb6bbd3d82f479baf1bd1c08094e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2120167837166703260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724b17652e6e6c84c997c52a6b166a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

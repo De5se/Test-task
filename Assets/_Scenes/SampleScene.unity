@@ -2759,6 +2759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3872904862738379867, guid: 4b5ae8c4ae9224b4bb608b8335ea8515,
+        type: 3}
+      propertyPath: angleAxis.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b5ae8c4ae9224b4bb608b8335ea8515, type: 3}
 --- !u!1001 &3788313664878572414
