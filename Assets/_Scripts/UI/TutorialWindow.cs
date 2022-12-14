@@ -15,7 +15,7 @@ namespace _Scripts.UI
 
         private void Update()
         {
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 _animator.SetTrigger(CloseTrigger);
             }
