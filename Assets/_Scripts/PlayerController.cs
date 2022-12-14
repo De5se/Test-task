@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float motionDuration;
 
-    private Vector2 _motionOffset;
+    private Vector3 _startPosition;
     private Tween _playerMotion;
     private bool _isControlEnabled;
 
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             UpdateStartPosition();
         }
@@ -36,13 +36,15 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateStartPosition()
     {
+        _startPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void SetMotionToPlayer()
     {
         _playerMotion.Kill();
 
-        var targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var offset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - _startPosition;
+        var targetPosition = transform.position + offset;
         targetPosition.z = transform.position.z;
         
         _playerMotion = transform.DOMove(targetPosition, motionDuration);
